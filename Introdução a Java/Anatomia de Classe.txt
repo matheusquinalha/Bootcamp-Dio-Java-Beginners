@@ -8,11 +8,112 @@ public class MinhaClasse{
    //Seu código aqui
 }
 
-Toda classe precisa ter sua primeira letra em maíscula, e caso seja uma informação composta (mais de uma palavra), essas demais palavras também devem estar com letra maíuscula
-
+Toda classe precisa ter sua primeira letra em maíscula, e caso seja uma informação composta (mais de uma palavra), essas demais palavras também devem estar com letra maíuscula. Isso equivale também ao nome do arquivo.
 
 Método para printar (exibir) algo na tela:
 
 System.out.println("Olá turma, sejam todos bem-vindos!");
 
 Utilzando esse comando, após compilar (executar) o comando, será exibido "Olá turma, sejam todos bem-vindos!"
+
+Váriavel:
+
+Toda variável deve ter a primeira letra minuscula, porém, caso seja composta, devemos aplicar o famoso CamelCase, que significa, que as demais palavras devem ter sua primeira letra Maisucula.
+
+Ex.:
+
+String nome
+String nomeMae
+String nomePai
+
+
+Caso tenhamos alguma variavel, no qual seu valor não pode ser alterado, deve ser colocado antes do tipo da variavel, a palavra "final".
+
+Ex.: Caso eu queira, no sistema, que o nome do país seja sempre Brasil, podemos declarar da seguinte forma:
+
+final String pais = "Brasil";
+
+ou
+
+final String pais;
+pais = Brasil;
+
+Dessa forma, o usuário não poderá alterar essa informação futuramente
+
+--Variaveis--
+
+Na declaração de variavies, existem algumas regras a serem seguidas:
+
+1 - não pode conter símbolos além de  '_' e '$'.
+2 - Não podem começar com um númeral.
+3 - Não pode conter espaço entre as palavras. Caso seja necessário, pode ser utilizado o '_'.
+4 - Não pode ser utilizado palavras reservadas pelo sistema, como por exemplo, a palavra INT, ou STRING
+
+
+--Métodos--
+
+Estrutura:
+TipoRetorno NomeObjetivoNoInfinitivo Parametro(s)
+
+Ex.:
+
+public String nomeCompleto(String primeiroNome, String segundoNome) {
+		return primeiroNome.concat(" ").concat(segundoNome);			
+	}	
+
+--Identação--
+
+Identação é uma forma de escrever o código, de forma hierárquica, facilitando assim a visualização do código.
+
+Muitas IDE's costumam ter atalhos para facilitar essa identação, porém, é de responsabilidade do desenvolvedor tomar esse cuidado enquanto descrever seu código
+
+--Organização de Arquivos--
+
+Esse é um assunto no qual poderá abranger muitas formas diversas a se organizar, variando aí de pessoa para pessoa, ou então de empresa para empresa.
+
+Dentro de um projeto, é comum a criação de folders(pastas), para a separação de classes, a fim de manter uma organização mais legível.
+
+primeiramente, devemos realizar a criação de um folder com uma abreviação na qual se referete aquele conjunto de classes. 
+
+Ex.: 
+1 - Caso eu queira criar uma pasta, onde irão conter diversas classes relacionadas a calculo, podemos utilizar "calc"
+
+2 - Caso queira criar uma pasta, onde irão conter diversas classes relacionadas a estudos, podemos utilizar "edu".
+
+A partir daí, caso tenha mais diversificações, por exmeplo, dentro da pasta calc, eu queria separar por cálculos básicos (soma, subtração, divisão e multiplicação), devemos criar mais um folder, chamando-o dessa vez de "basico", ou "base" por exemplo.
+
+E isso irá se repetir quantas vezes se tornarem necessárias para manter uma organização impecável do projeto.
+
+
+--Java Beans--
+
+Java Beans trata-se de formas de escrita universal, para que seja compreensivel por todos (inclusive você mesmo futuramente).
+
+1 - Uma variavel deve ser clara, sem abreviações
+
+2 - Uma variavel deve ser sempre no singular, exceto quando trata-se de uma String ou Array;
+
+3 - Defina um idioma único para suas variáveis, para manter um padrão
+
+Ex.:
+
+double salMedia
+String emails
+String myName
+
+Correção:
+
+double salarioMedio
+String email
+String [] emails
+String meuNome
+
+--Métodos--
+
+1 - Deve ser nomeado como verbos, utilizando o CamelCase
+
+2 - Utilizar verbos no infinitivo
+
+3 - Manter um único idioma para os seus métodos (é comum serem todos em ingles)
+
+4 - Manter apenas uma função por método
