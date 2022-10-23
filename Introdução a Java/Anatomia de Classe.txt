@@ -1,0 +1,18 @@
+"Uma classe bem estruturada não quer guerra com ninguem"
+
+Nome do arquivo precisa ter coerência com o nome da classe a ser criada.
+
+Arquivo: Minha Classe
+
+public class MinhaClasse{
+   //Seu código aqui
+}
+
+Toda classe precisa ter sua primeira letra em maíscula, e caso seja uma informação composta (mais de uma palavra), essas demais palavras também devem estar com letra maíuscula
+
+
+Método para printar (exibir) algo na tela:
+
+System.out.println("Olá turma, sejam todos bem-vindos!");
+
+Utilzando esse comando, após compilar (executar) o comando, será exibido "Olá turma, sejam todos bem-vindos!"
